@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.hero-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%);
+}
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+.skill-bar {
+    transition: all 2s ease;
+}
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+.dark-mode .hero-bg {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+.dark-mode .bg-white {
+    background-color: #2d2d2d;
+}
+.dark-mode .text-gray-800 {
+    color: #e0e0e0;
+}
+.dark-mode .text-gray-600 {
+    color: #b0b0b0;
+}
+.custom-border {
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+  }
